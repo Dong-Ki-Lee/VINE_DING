@@ -1,0 +1,2 @@
+sudo apt-get install rdate
+sudo rdate -s time.bora.net

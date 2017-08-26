@@ -1,0 +1,12 @@
+sudo apt-get install cgroup-tools
+sudo cgcreate -g memory:MongoLimitGroup
+sudo vim /sys/fs/cgroup/memory/MongoLimitGroup/memory.limit_in_bytes
+=> write 1610612736 == 1.5GB
+sudo vim /proc/sys/vm/drop_caches
+=> write 3
+sudo sync
+sudo cgclassify -g memory:MongoLimitGroup pid
+
+how to get process id?
+
+ps ax | grep process_name

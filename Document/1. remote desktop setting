@@ -1,0 +1,8 @@
+sudo apt-get install xrdp
+sudo apt-get update
+sudo apt-get install mate-core mate-desktop-environment mate-notification-daemon
+
+sudo sed -i.bak '/fi/a #xrdp multiple users configuration \nmate-session \n' /etc/xrdp/startwm.sh
+
+sudo vim /etc/xrdp/xrdp.ini 
+change port this file.

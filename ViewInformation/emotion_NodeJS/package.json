@@ -1,0 +1,19 @@
+{
+  "name": "vineding",
+  "version": "1.0.0",
+  "description": "emotion",
+  "main": "emotion_node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dlehdrl9638@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "korean-sentiment-analyzer": "0.0.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.7"
+  }
+}
