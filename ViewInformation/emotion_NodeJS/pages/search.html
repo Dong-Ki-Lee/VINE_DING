@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#mapreduce').click(function () {
+            $('#result').html('');
+            $.ajax({
+                url:'/searchEmotion',
+                data: {'search_word':$('#search_word').val()},
+                dataType:'json',
+                type:'get',
+                success:function(data) {
+                    $('#result').html(data['_id']);
+                },
+				timeout: 300000
+            });
+        });
+    });
+</script>
+<html>
+<head>
+	<title>ajax test</title>
+</head>
+</html>
+<body>
+	<input type="text" id="search_word">
+	<input type="button" value="search" id="mapreduce">
+	<div id="result"></div>
+</body>

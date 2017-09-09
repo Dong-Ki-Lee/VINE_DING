@@ -3,7 +3,8 @@ var app = express();
 
 var router = require('./router/main')(app);
 
-app.set('views', './');
+app.set('views', './pages');
+app.set('public', './dist/css')
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
