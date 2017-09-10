@@ -74,3 +74,11 @@ $.ajax({
         resize: true
     });
 });
+
+$.ajax({
+    url:'/searchEmotion',
+    dataType:'json',
+    type:'get'
+}).done(function(html) {
+
+});
