@@ -9,7 +9,7 @@ db = client.twitter_api
 korean_coll = db.twitter_korean_data
 
 #cursor counter
-counter = 110516313
+counter = 123950970
 
 
 #regular expression
@@ -40,6 +40,6 @@ while True:
 
     print("maybe saved this point")
     print(counter)
-    print("wait 120 MINUTE")
-    time.sleep(7200)
+    print("wait 4 hours")
+    time.sleep(14400)
 

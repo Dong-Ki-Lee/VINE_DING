@@ -8,7 +8,8 @@ router.get('/getDatabaseData', function(request, response) {
     MongoClient.connect(url, function(err, db) {
         db.collection('twitter_data').count(function(err, count) {
             console.log(count);
-            response.send(count);
+            var returnValue = {count: count};
+            response.send(returnValue);
         });
     });
 });
