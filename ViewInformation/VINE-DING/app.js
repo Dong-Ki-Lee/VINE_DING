@@ -10,6 +10,7 @@ var users = require('./routes/users');
 var search = require('./routes/search');
 var search_emotion = require('./routes/search_emotion');
 var get_database_data = require('./routes/get_database_data');
+var get_database_list = require('./routes/get_database_list');
 var mapreduce_request = require('./routes/mapreduce_request');
 
 var app = express();
@@ -38,6 +39,7 @@ app.use('/', search);
 app.use('/', search_emotion);
 app.use('/', get_database_data);
 app.use('/', mapreduce_request);
+app.use('/', get_database_list);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

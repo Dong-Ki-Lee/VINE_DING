@@ -32,7 +32,7 @@ $.ajax({
     var positive = 0;
     var negative = 0;
 
-    for(var i = 0; i < 10; i++) {
+    for(var i = 0; i < html.length; i++) {
         positive += Number(html[i].value.positive.toString());
         negative += Number(html[i].value.negative.toString());
     }
@@ -57,4 +57,12 @@ $.ajax({
     type:'get'
 }).done(function(dbData) {
     $("#sns-data").html(dbData.count);
+});
+
+$.ajax({
+    url:'/getDatabaseList',
+    dataType:'json',
+    type:'get'
+}).done(function(dbData) {
+    $("#data-amount").html(dbData + " GB");
 });
