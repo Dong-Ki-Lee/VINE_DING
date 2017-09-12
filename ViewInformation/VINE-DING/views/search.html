@@ -55,7 +55,7 @@
             <div class="sidebar-nav navbar-collapse">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="/search"><i class="fa fa-dashboard fa-fw"></i> Emotional analysis</a>
+                        <a href="/search"><img src="/images/vine-ding-emotion.png" width="200px"></a>
                     </li>
                 </ul>
             </div>
@@ -65,23 +65,35 @@
     </nav>
 
     <div id="page-wrapper">
-
         <div class="row">
-            <div class="col-lg-6">
-                <div class="panel panel-default">
+            <br></br>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <div class="form-group input-group has-success center-block text-center">
+                    <form action="/emotion" method="get">
+                        <label class="control-label" for="search_word"><h2>검색어를 입력하세요</h2></label>
+                        <input type="text" class="form-control" name="search_word">
+                        <br>
+                        <br>
+                        <br>
+                        <input type="submit" class="btn btn-primary btn-lg btn-block" value="감정분석 서비스 시작">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
-                        Basic Table
+                        바로 확인 가능한 검색어
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
-                        <div class="table-responsive">
+                        <div class="table-responsive table-bordered">
                             <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>Saved Searches</th>
-                                </tr>
-                                </thead>
-                                <tbody>
+                                <tbody id="save-list">
                                 </tbody>
                             </table>
                         </div>
@@ -92,13 +104,7 @@
                 <!-- /.panel -->
             </div>
             <!-- /.col-lg-6 -->
-            <form action="/emotion" method="get">
-                <input type="text" name="search_word">
-                <input type="submit" value="search">
-            </form>
-            <div id="result"></div>
-            <div id="result2"></div>
-            <div><script></script></div>
+
         </div>
     </div>
     <!-- /#page-wrapper -->
@@ -140,7 +146,6 @@
     });
 </script>
 <script>
-    $('#result2').html('');
     $.ajax({
         url:'/search_get',
         dataType:'json',
@@ -148,8 +153,15 @@
     }).done(function(mapreduce) {
         for(var i = 0; i < mapreduce.length; i++) {
             if(JSON.stringify(mapreduce[i].name).indexOf("mapReduce") != -1) {
-                $('#result2').append(JSON.stringify(mapreduce[i].name));
+                var saveData = JSON.stringify(mapreduce[i].name);
+                saveData = saveData.replace('mapReduce', '');
+                var returnData = "<tr><td>";
+                returnData = returnData.concat(saveData, "</td>");
+                $('#save-list').append(returnData);
 			}
+			if(i > 9) {
+                break;
+            }
 		}
     });
 </script>

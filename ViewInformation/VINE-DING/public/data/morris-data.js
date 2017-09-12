@@ -56,7 +56,7 @@ $.ajax({
     dataType:'json',
     type:'get'
 }).done(function(dbData) {
-    $("#sns-data").html(dbData.count);
+    $("#sns-data").html(dbData.count+" 개");
 });
 
 $.ajax({
@@ -64,5 +64,5 @@ $.ajax({
     dataType:'json',
     type:'get'
 }).done(function(dbData) {
-    $("#data-amount").html(dbData + " GB");
+    $("#data-amount").html("총 " + dbData + " GB");
 });
