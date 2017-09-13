@@ -8,7 +8,14 @@ router.get('/mapreduceRequest', function(request, response) {
     var search_word = request.session.search_word;
     var MongoClient = require('mongodb').MongoClient, assert = require('assert');
     var url = 'mongodb://localhost:26543/twitter_api';
+    var save_email_list_url = 'mongodb://localhost:26543/email_list';
 
+    MongoClient.connect(save_email_list_url, function(err, db) {
+        db.collection('email_list').insertOne( {
+            email : request_email,
+            search_word : search_word
+        })
+    });
     MongoClient.connect(url, function(err, db) {
         assert.equal(null, err);
         console.log("connected successfully to server");
@@ -51,6 +58,7 @@ router.get('/mapreduceRequest', function(request, response) {
 
             return {positive : positive, negative : negative};
         };
+
         db.collection('twitter_korean_emotion_data_v1').mapReduce(
             map,
             reduce,

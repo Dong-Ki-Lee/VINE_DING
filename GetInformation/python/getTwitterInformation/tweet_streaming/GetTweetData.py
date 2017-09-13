@@ -9,10 +9,10 @@ import json
 
 from urllib3.exceptions import ProtocolError
 
-access_token = "892006530941202432-RrpdVwsIFk1epMMxUmH78ajLJkdgCxG";
-access_token_secret = "u0VioiUGtLBfYvewg9iXb14dh5XaVfIXCsqdgWEi7CVOa";
-consumer_key = "v669aHLKMEjt7lKOK4S4x34fO";
-consumer_secret = "UkmJ5RtnckaX0DbrnU3dynTpAXGKGFx9utT8aF3xes5llhrnmc";
+access_token = "your's";
+access_token_secret = "your's";
+consumer_key = "your's";
+consumer_secret = "your's";
 
 client = MongoClient('localhost', 26543)
 db = client.twitter_api
