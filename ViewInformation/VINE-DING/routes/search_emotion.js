@@ -15,9 +15,9 @@ router.get('/emotion', function(request, response) {
         console.log(table_name);
         db.listCollections({name: table_name}).next(function (err, collinfo) {
             if (collinfo) {
-                response.render('emotion_view.html');
+                response.render('emotion_view_v2.html');
             } else {
-                response.render('mapreduce_request.html');
+                response.render('mapreduce_request_v2.html');
             }
         })
     })

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VINE-DING</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/not-min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="/vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/">VINE-DING</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/search">감정분석</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/">최신트랜드(예정)</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">VINE-DING Emotion</div>
+          <br>
+          <h4>당신의 검색어 분석을 완료하였습니다.</h4>
+          <br>
+          <br>
+          <a class="btn btn-xl js-scroll-trigger" href="#emotion">감정분석 분석결과 바로가기</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="emotion">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4 id="result_data"></h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-12 text-center">
+                    <div class="huge" id="sns-data"></div>
+                    <div>SNS 데이터를 이용</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="panel panel-green">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-12 text-center">
+                    <div class="huge" id="community-data">1</div>
+                    <div>검색횟수</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="panel panel-yellow">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-12 text-center">
+                    <div class="huge" id="data-amount"></div>
+                    <div>의 데이터를 이용</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class="fa fa-bar-chart-o fa-fw"></i> 최근 10일 동안의 감정 변화 그래프
+                <div class="pull-right">
+                  <div class="btn-group">
+                    <ul class="dropdown-menu pull-right" role="menu">
+                      <li><a href="#">Action</a>
+                      </li>
+                      <li><a href="#">Another action</a>
+                      </li>
+                      <li><a href="#">Something else here</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- /.panel-heading -->
+              <div class="panel-body">
+                <div id="morris-area-chart"></div>
+              </div>
+              <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+
+          </div>
+          <!-- /.col-lg-8 -->
+          <div class="col-lg-4">
+            <!-- /.panel -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <i class="fa fa-bar-chart-o fa-fw"></i> 최근 10일 동안의 총 긍/부정 양
+              </div>
+              <div class="panel-body">
+                <div id="morris-donut-chart"></div>
+              </div>
+              <!-- /.panel-body -->
+            </div>
+
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright">Copyright &copy; Lee 2017</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="/vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="/vendor/raphael/raphael.min.js"></script>
+    <script src="/vendor/morrisjs/morris.min.js"></script>
+    <script src="/data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/dist/js/sb-admin-2.js"></script>
+
+  </body>
+
+</html>
+
+
+<script>
+    var getParameters = function (paramName) {
+        // 리턴값을 위한 변수 선언
+        var returnValue;
+
+        // 현재 URL 가져오기
+        var url = location.href;
+
+        // get 파라미터 값을 가져올 수 있는 ? 를 기점으로 slice 한 후 split 으로 나눔
+        var parameters = (url.slice(url.indexOf('?') + 1, url.length)).split('&');
+
+        // 나누어진 값의 비교를 통해 paramName 으로 요청된 데이터의 값만 return
+        for (var i = 0; i < parameters.length; i++) {
+            var varName = parameters[i].split('=')[0];
+            if (varName.toUpperCase() == paramName.toUpperCase()) {
+                returnValue = parameters[i].split('=')[1];
+                return decodeURIComponent(returnValue);
+            }
+        }
+    };
+
+    var returnV = getParameters("search_word");
+
+    var returnData = "검색어 ";
+    returnData = returnData.concat(returnV, "에 대한 결과 입니다");
+    $('#result_data').append(returnData);
+</script>

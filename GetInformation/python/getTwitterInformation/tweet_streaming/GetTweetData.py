@@ -9,10 +9,6 @@ import json
 
 from urllib3.exceptions import ProtocolError
 
-access_token = "your's";
-access_token_secret = "your's";
-consumer_key = "your's";
-consumer_secret = "your's";
 
 client = MongoClient('localhost', 26543)
 db = client.twitter_api

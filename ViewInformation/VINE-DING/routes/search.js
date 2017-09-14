@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/search', function(req, res, next) {
-    res.render('search.html');
+    res.render('search_v2.html');
 });
 
 router.get('/search_get', function(req, res) {
