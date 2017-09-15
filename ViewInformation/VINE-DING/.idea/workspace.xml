@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inde2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inde2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/inde2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="87" column="47" lean-forward="true" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
+            <state relative-caret-position="460">
+              <caret line="78" column="31" lean-forward="true" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -27,18 +27,8 @@
       <file leaf-file-name="search_v2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/search_v2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1957">
-              <caret line="88" column="16" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_emotion.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/search_emotion.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+            <state relative-caret-position="2146">
+              <caret line="202" column="26" lean-forward="true" selection-start-line="202" selection-start-column="26" selection-end-line="202" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -47,19 +37,13 @@
       <file leaf-file-name="emotion_view_v2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/emotion_view_v2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-472">
-              <caret line="103" column="24" lean-forward="true" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mapreduce_request_v2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/mapreduce_request_v2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-548">
-              <caret line="64" column="62" lean-forward="true" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
-              <folding />
+            <state relative-caret-position="-2153">
+              <caret line="184" column="60" lean-forward="true" selection-start-line="184" selection-start-column="60" selection-end-line="184" selection-end-column="60" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,18 +51,70 @@
       <file leaf-file-name="inter_page_v1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/inter_page_v1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342">
-              <caret line="61" column="45" lean-forward="false" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+            <state relative-caret-position="53">
+              <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapreduce_request.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/mapreduce_request.js">
+      <file leaf-file-name="search_emotion.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/search_emotion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="83" column="46" lean-forward="false" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+            <state relative-caret-position="524">
+              <caret line="75" column="55" lean-forward="true" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_database_data.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/get_database_data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/다운로드/startbootstrap-sb-admin-2-gh-pages/pages/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14184">
+              <caret line="788" column="26" lean-forward="true" selection-start-line="788" selection-start-column="26" selection-end-line="906" selection-end-column="48" />
+              <folding>
+                <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="not-min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/vendor/bootstrap/css/not-min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="2836" column="7" lean-forward="false" selection-start-line="2836" selection-start-column="7" selection-end-line="2836" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4301" column="14" lean-forward="false" selection-start-line="4301" selection-start-column="13" selection-end-line="4301" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mapreduce_request_v2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/mapreduce_request_v2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -95,14 +131,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>button size</find>
-      <find>input groups</find>
-      <find>block level</find>
-      <find>jum</find>
-      <find>emotion</find>
-      <find>most p</find>
-      <find>charts</find>
-      <find>4.0.0</find>
       <find>primary</find>
       <find>text-center</find>
       <find>col-xs</find>
@@ -125,6 +153,14 @@
       <find>table-respon</find>
       <find>table-re</find>
       <find>table</find>
+      <find>datatables</find>
+      <find>table-hover</find>
+      <find>datatables Advanced Tables</find>
+      <find>data-ta</find>
+      <find>datatable</find>
+      <find>data-table</find>
+      <find>chat</find>
+      <find>lead</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -134,7 +170,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/pages/tables.html" />
         <option value="$PROJECT_DIR$/routes/get_database_data.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/get_database_list.js" />
         <option value="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/public/data/morris-data.js" />
@@ -146,13 +181,14 @@
         <option value="$PROJECT_DIR$/routes/search.js" />
         <option value="$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/public/vendor/bootstrap/css/not-min.css" />
-        <option value="$PROJECT_DIR$/routes/search_emotion.js" />
         <option value="$PROJECT_DIR$/views/search_v2.html" />
-        <option value="$PROJECT_DIR$/views/mapreduce_request_v2.html" />
         <option value="$PROJECT_DIR$/routes/mapreduce_request.js" />
-        <option value="$PROJECT_DIR$/views/inde2.html" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/inter_page_v1.html" />
+        <option value="$PROJECT_DIR$/views/inde2.html" />
+        <option value="$PROJECT_DIR$/routes/search_emotion.js" />
         <option value="$PROJECT_DIR$/views/emotion_view_v2.html" />
+        <option value="$PROJECT_DIR$/views/mapreduce_request_v2.html" />
       </list>
     </option>
   </component>
@@ -167,7 +203,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="58" />
     <option name="y" value="64" />
     <option name="width" value="1123" />
@@ -338,20 +374,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504722000118</updated>
-      <workItem from="1504722003344" duration="124546000" />
+      <workItem from="1504722003344" duration="143561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124546000" />
+    <option name="totallyTimeSpent" value="143561000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="64" width="1123" height="736" extended-state="1" />
+    <frame x="-4" y="32" width="1288" height="740" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3305785" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -372,15 +408,15 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -436,14 +472,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/get_database_data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -533,14 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/search.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -580,17 +600,9 @@
         <state relative-caret-position="90">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="31" selection-end-column="87" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/vendor/bootstrap/css/not-min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="8311" column="15" lean-forward="false" selection-start-line="8311" selection-start-column="10" selection-end-line="8311" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,14 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="5518" column="29" lean-forward="true" selection-start-line="5518" selection-start-column="29" selection-end-line="5518" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/mapreduce_request.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -620,14 +624,6 @@
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/search_emotion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -639,42 +635,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/emotion_view_v2.html">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-472">
-          <caret line="103" column="24" lean-forward="true" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
+        <state relative-caret-position="336">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/inter_page_v1.html">
+    <entry file="file://$USER_HOME$/다운로드/startbootstrap-sb-admin-2-gh-pages/pages/tables.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="61" column="45" lean-forward="false" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+        <state relative-caret-position="36">
+          <caret line="1133" column="0" lean-forward="true" selection-start-line="1133" selection-start-column="0" selection-end-line="1139" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/mapreduce_request_v2.html">
+    <entry file="file://$PROJECT_DIR$/public/vendor/datatables/css/dataTables.bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-548">
-          <caret line="64" column="62" lean-forward="true" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
+        <state relative-caret-position="197">
+          <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendor/bootstrap/css/not-min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="2836" column="7" lean-forward="false" selection-start-line="2836" selection-start-column="7" selection-end-line="2836" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/vendor/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4301" column="14" lean-forward="false" selection-start-line="4301" selection-start-column="13" selection-end-line="4301" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/search_v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1957">
-          <caret line="88" column="16" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+        <state relative-caret-position="2146">
+          <caret line="202" column="26" lean-forward="true" selection-start-line="202" selection-start-column="26" selection-end-line="202" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/get_database_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/search_emotion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="75" column="55" lean-forward="true" selection-start-line="75" selection-start-column="55" selection-end-line="75" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/다운로드/startbootstrap-sb-admin-2-gh-pages/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14184">
+          <caret line="788" column="26" lean-forward="true" selection-start-line="788" selection-start-column="26" selection-end-line="906" selection-end-column="48" />
+          <folding>
+            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/inde2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="87" column="47" lean-forward="true" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
+        <state relative-caret-position="460">
+          <caret line="78" column="31" lean-forward="true" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/emotion_view_v2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2153">
+          <caret line="184" column="60" lean-forward="true" selection-start-line="184" selection-start-column="60" selection-end-line="184" selection-end-column="60" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/inter_page_v1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/mapreduce_request_v2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
           <folding />
         </state>
       </provider>

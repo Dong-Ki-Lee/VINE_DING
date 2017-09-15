@@ -9,7 +9,6 @@ import json
 
 from urllib3.exceptions import ProtocolError
 
-
 client = MongoClient('localhost', 26543)
 db = client.twitter_api
 coll = db.twitter_data

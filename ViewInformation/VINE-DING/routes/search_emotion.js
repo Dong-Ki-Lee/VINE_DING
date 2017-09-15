@@ -47,4 +47,47 @@ router.get('/searchEmotion', function(request, response) {
     })
 });
 
+
+router.get('/getNegativeEmotion', function(request, response) {
+
+    var search_word = request.session.search_word;
+    var MongoClient = require('mongodb').MongoClient, assert = require('assert');
+    var url = 'mongodb://localhost:26543/twitter_api';
+    MongoClient.connect(url, function(err, db) {
+        assert.equal(null, err);
+        console.log("connected successfully to server");
+        db.listCollections({name : "twitter_korean_emotion_data_v1"}).next(function(err, collinfo) {
+            if(collinfo) {
+
+                var find_option = {emotion: {$lte: -20}, text:{$regex:search_word}};
+                db.collection("twitter_korean_emotion_data_v1").find(find_option).limit(4).toArray(function(err, results){
+                    console.log(results);
+                    response.send(results);
+                })
+            }
+        })
+    })
+});
+
+
+router.get('/getPositiveEmotion', function(request, response) {
+
+    var search_word = request.session.search_word;
+    var MongoClient = require('mongodb').MongoClient, assert = require('assert');
+    var url = 'mongodb://localhost:26543/twitter_api';
+    MongoClient.connect(url, function(err, db) {
+        assert.equal(null, err);
+        console.log("connected successfully to server");
+        db.listCollections({name : "twitter_korean_emotion_data_v1"}).next(function(err, collinfo) {
+            if(collinfo) {
+
+                var find_option = {emotion: {$gte: 15}, text:{$regex:search_word}};
+                db.collection("twitter_korean_emotion_data_v1").find(find_option).limit(4).toArray(function(err, results){
+                    console.log(results);
+                    response.send(results);
+                })
+            }
+        })
+    })
+});
 module.exports = router;

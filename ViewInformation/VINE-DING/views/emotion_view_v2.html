@@ -35,6 +35,7 @@
     <!-- Custom Fonts -->
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+
   </head>
 
   <body id="page-top">
@@ -68,6 +69,7 @@
           <h4>당신의 검색어 분석을 완료하였습니다.</h4>
           <br>
           <br>
+            <br>
           <a class="btn btn-xl js-scroll-trigger" href="#emotion">감정분석 분석결과 바로가기</a>
         </div>
       </div>
@@ -167,10 +169,38 @@
           <!-- /.col-lg-4 -->
         </div>
         <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <a class="btn btn-xl js-scroll-trigger" href="#sns-view">긍정/부정 SNS메시지</a>
+            </div>
 
+        </div>
       </div>
     </section>
-    <!-- Footer -->
+    <section id="sns-view">
+        <div class="container">
+            <!-- /.panel -->
+            <div class="chat-panel panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-comments fa-fw"></i> SNS
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <ul class="chat" id="sns-comment-data">
+
+                    </ul>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel .chat-panel -->
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a class="btn btn-xl js-scroll-trigger" href="/">메인 페이지로 돌아가기</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer>
       <div class="container">
         <div class="row">
@@ -184,19 +214,19 @@
     <!-- Portfolio Modals -->
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/popper/popper.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
+    <script src="/js/agency.min.js"></script>
 
 
     <!-- Metis Menu Plugin JavaScript -->
@@ -210,10 +240,10 @@
     <!-- Custom Theme JavaScript -->
     <script src="/dist/js/sb-admin-2.js"></script>
 
+
   </body>
 
 </html>
-
 
 <script>
     var getParameters = function (paramName) {
@@ -241,4 +271,63 @@
     var returnData = "검색어 ";
     returnData = returnData.concat(returnV, "에 대한 결과 입니다");
     $('#result_data').append(returnData);
+</script>
+
+
+<script>
+    $.ajax({
+        url:'/getPositiveEmotion',
+        dataType:'json',
+        type:'get'
+    }).done(function(positive_mention) {
+
+
+        for(i in positive_mention) {
+            var positive = "positive";
+            var mention = JSON.stringify(positive_mention[i].text);
+            var html = "<li class='left clearfix'>" +
+                "<span class='chat-img pull-left'>" +
+                "<img src='http://placehold.it/50/55C1E7/fff' alt='User Avatar' class='img-circle' />" +
+                "</span>" +
+                "<div class='chat-body clearfix'>" +
+                "<div class='header'>" +
+                "<strong class='primary-font'>" +
+                    positive +
+                "</strong>" +
+                "<small class='pull-right text-muted'></small></div>" +
+                "<p>" +
+                    mention +
+                "</p></div></li>";
+            $('#sns-comment-data').append(html);
+        }
+    });
+</script>
+
+<script>
+    $.ajax({
+        url:'/getNegativeEmotion',
+        dataType:'json',
+        type:'get'
+    }).done(function(negative_mention) {
+
+
+        for(i in negative_mention) {
+            var negative = "negative";
+            var mention = JSON.stringify(negative_mention[i].text);
+            var html = "<li class='right clearfix'>" +
+                "<span class='chat-img pull-right'>" +
+                "<img src='http://placehold.it/50/FA6F57/fff' alt='User Avatar' class='img-circle' />" +
+                "</span>" +
+                "<div class='chat-body clearfix'>" +
+                "<div class='header'>" +
+                "<strong class='pull-right primary-font'>" +
+                negative +
+                "</strong>" +
+                "<small class='pull-right text-muted'></small></div>" +
+                "<p>" +
+                mention +
+                "</p></div></li>";
+            $('#sns-comment-data').append(html);
+        }
+    });
 </script>
