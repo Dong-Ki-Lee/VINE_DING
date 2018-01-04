@@ -11,7 +11,7 @@ korean_coll = db.twitter_korean_data
 emotion_coll = db.twitter_korean_emotion_data_v1
 
 #cursor counter
-counter = 6776788
+counter = 0
 time.sleep(3600)
 while True:
     try:

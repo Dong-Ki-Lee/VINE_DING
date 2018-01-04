@@ -81,7 +81,7 @@ router.get('/getPositiveEmotion', function(request, response) {
         db.listCollections({name : "twitter_korean_emotion_data_v1"}).next(function(err, collinfo) {
             if(collinfo) {
 
-                var find_option = {emotion: {$gte: 15}, text:{$regex:search_word}};
+                var find_option = {emotion: {$gte: 12}, text:{$regex:search_word}};
                 db.collection("twitter_korean_emotion_data_v1").find(find_option).limit(4).toArray(function(err, results){
                     console.log(results);
                     response.send(results);

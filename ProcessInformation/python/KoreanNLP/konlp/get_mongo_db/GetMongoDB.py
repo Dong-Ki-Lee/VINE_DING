@@ -9,7 +9,7 @@ db = client.twitter_api
 korean_coll = db.twitter_korean_data
 
 #cursor counter
-counter = 123950970
+counter = 0
 
 
 #regular expression

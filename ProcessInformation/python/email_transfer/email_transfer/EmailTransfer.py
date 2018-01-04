@@ -4,8 +4,10 @@ import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
+MAIL_ACCOUNT = "vinedingproject@gmail.com"
+MAIL_PASSWORD = "yourpassword"
 TITLE = "VINE-DING 에서 당신의 검색어가 준비 되었음을 알려드립니다."
-CONTENT = "저희 VINE-DING 을 이용해 주셔서 감사합니다. 다음 링크를 클릭하여 당신의 검색어를 확인해 주세요 http://164.125.14.150:3000/emotion?search_word="
+CONTENT = "저희 VINE-DING 을 이용해 주셔서 감사합니다. 다음 링크를 클릭하여 당신의 검색어를 확인해 주세요 http://vineding.tk/emotion?search_word="
 
 
 def send_via_gmail(to, title, description):

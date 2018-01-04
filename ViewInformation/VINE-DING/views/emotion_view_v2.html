@@ -186,7 +186,10 @@
                 </div>
                 <!-- /.panel-heading -->
                 <div class="panel-body">
-                    <ul class="chat" id="sns-comment-data">
+                    <ul class="chat" id="sns-positive-comment-data">
+
+                    </ul>
+                    <ul class="chat" id="sns-negative-comment-data">
 
                     </ul>
                 </div>
@@ -278,10 +281,15 @@
     $.ajax({
         url:'/getPositiveEmotion',
         dataType:'json',
-        type:'get'
+        type:'get',
+
+        beforeSend: function () {
+            $('#sns-positive-comment-data').html("<div class='text-center'><img src='/images/loading.gif'/></div>")
+        }
     }).done(function(positive_mention) {
 
 
+        $('#sns-positive-comment-data').html('');
         for(i in positive_mention) {
             var positive = "positive";
             var mention = JSON.stringify(positive_mention[i].text);
@@ -298,7 +306,7 @@
                 "<p>" +
                     mention +
                 "</p></div></li>";
-            $('#sns-comment-data').append(html);
+            $('#sns-positive-comment-data').append(html);
         }
     });
 </script>
@@ -307,10 +315,15 @@
     $.ajax({
         url:'/getNegativeEmotion',
         dataType:'json',
-        type:'get'
+        type:'get',
+
+        beforeSend: function () {
+            $('#sns-negative-comment-data').html("<div class='text-center'><img src='/images/loading.gif'/></div>")
+        }
     }).done(function(negative_mention) {
 
 
+        $('#sns-negative-comment-data').html('');
         for(i in negative_mention) {
             var negative = "negative";
             var mention = JSON.stringify(negative_mention[i].text);
@@ -327,7 +340,7 @@
                 "<p>" +
                 mention +
                 "</p></div></li>";
-            $('#sns-comment-data').append(html);
+            $('#sns-negative-comment-data').append(html);
         }
     });
 </script>
