@@ -1,5 +1,7 @@
-# VINE_DING
+(# VINE_DING
 
 이 프로젝트는 SNS데이터와 커뮤니티 사이트들의 데이터를 수집된 빅데이터를 기반으로 최신 트랜드와 키워드에 대한 감정을 분석하는 웹 기반 프로젝트 입니다.
 
-www.vineding.tk
+www.vineding.tk 
+
+개선작업중
