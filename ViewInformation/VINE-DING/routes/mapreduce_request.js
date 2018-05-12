@@ -1,5 +1,19 @@
+/*
+작성자 : DongKi Lee
+수정일 : 2018-05-13
+기능 : 
+1. 이메일정보, 검색어 정보를 포함한 연산 요청을 받는다.
+2. 받은 이메일 정보와 검색어 정보를 데이터베이스에 저장한다.
+3. 기존에 처리되어있는 검색어 인지 확인하고, 있다면 바로 다음페이지로 넘긴다.
+4. 새로 처리해야 한다면, 감정을 처리하는 map reduce 연산을 실행시킨다.
+5. map reduce 연산을 실행한 후에 다음 페이지로 넘어간다.
+change log : 
+2018-05-13 : 설명 추가
+*/
+
 var express = require('express');
 var router = express.Router();
+//MongoDB에 내장되어있는 map reduce 연산을 요청하고 그 결과를 받음.
 
 router.get('/mapreduceRequest', function(request, response) {
 
@@ -59,7 +73,7 @@ router.get('/mapreduceRequest', function(request, response) {
                         var positive = 0;
                         var negative = 0;
 
-                        for(counter in valuesEmotion) {
+                        for(var counter in valuesEmotion) {
                             positive += valuesEmotion[counter].positive;
                             negative += valuesEmotion[counter].negative;
                         }
@@ -79,9 +93,9 @@ router.get('/mapreduceRequest', function(request, response) {
                         }
 
 
-                    )
+                    );
                 });
-                response.render('inter_page_v1.html')
+                response.render('inter_page_v1.html');
             }
         });
 
