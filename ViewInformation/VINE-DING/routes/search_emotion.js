@@ -16,14 +16,14 @@ change log :
 2018-05-13 : 설명 추가
 */
 
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const MongoClient = require('mongodb').MongoClient, assert = require('assert');
 
 router.get('/emotion', function(request, response) {
 
     var search_word = request.query.search_word;
     request.session.search_word = search_word;
-    var MongoClient = require('mongodb').MongoClient, assert = require('assert');
     var url = 'mongodb://localhost:26543/twitter_api';
     MongoClient.connect(url, function(err, db) {
         assert.equal(null, err);
@@ -43,7 +43,6 @@ router.get('/emotion', function(request, response) {
 router.get('/searchEmotion', function(request, response) {
 
     var search_word = request.session.search_word;
-    var MongoClient = require('mongodb').MongoClient, assert = require('assert');
     var url = 'mongodb://localhost:26543/twitter_api';
     MongoClient.connect(url, function(err, db) {
         assert.equal(null, err);
@@ -66,7 +65,6 @@ router.get('/searchEmotion', function(request, response) {
 router.get('/getNegativeEmotion', function(request, response) {
 
     var search_word = request.session.search_word;
-    var MongoClient = require('mongodb').MongoClient, assert = require('assert');
     var url = 'mongodb://localhost:26543/twitter_api';
     MongoClient.connect(url, function(err, db) {
         assert.equal(null, err);
@@ -88,7 +86,6 @@ router.get('/getNegativeEmotion', function(request, response) {
 router.get('/getPositiveEmotion', function(request, response) {
 
     var search_word = request.session.search_word;
-    var MongoClient = require('mongodb').MongoClient, assert = require('assert');
     var url = 'mongodb://localhost:26543/twitter_api';
     MongoClient.connect(url, function(err, db) {
         assert.equal(null, err);
