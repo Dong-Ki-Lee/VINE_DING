@@ -14,6 +14,7 @@
 
 change log : 
 2018-05-13 : 설명 추가
+2018-06-02 : 모듈 호출 var -> const 로 변경
 */
 
 const express = require('express');
