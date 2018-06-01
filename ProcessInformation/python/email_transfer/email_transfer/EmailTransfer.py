@@ -1,28 +1,41 @@
+'''
+작성자 : DongKi Lee
+기록 시작일 : 2018-06-02
+기능 : 
+계산 요청을 한 고객들의 요청이 완료 되었을 경우,
+해당 고객들에게 이메일을 자동으로 보내주는 모듈
+change log : 
+2018-06-02 : 설명 추가
+2018-06-02 : 중복되는 부분 
+'''
+
 import smtplib
 import pymongo
 import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-MAIL_ACCOUNT = "vinedingproject@gmail.com"
-MAIL_PASSWORD = "yourpassword"
+MAIL_ACCOUNT = "your gmail account id"
+MAIL_PASSWORD = "your gmail account pw"
 TITLE = "VINE-DING 에서 당신의 검색어가 준비 되었음을 알려드립니다."
 CONTENT = "저희 VINE-DING 을 이용해 주셔서 감사합니다. 다음 링크를 클릭하여 당신의 검색어를 확인해 주세요 http://vineding.tk/emotion?search_word="
+MONGODB_PORT = 26543
+MONGODB_IP = "localhost"
 
 
-def send_via_gmail(to, title, description):
+def sending_email_using_gmail(to, title, description):
     from_address = MAIL_ACCOUNT
     msg = get_message_formatted(from_address, to, title, description)
 
     try:
-        s = smtplib.SMTP('smtp.gmail.com:587')
-        s.starttls()
-        s.login(MAIL_ACCOUNT, MAIL_PASSWORD)
-        s.sendmail(from_address, to, msg.as_string())
+        smtp = smtplib.SMTP('smtp.gmail.com:587')
+        smtp.starttls()
+        smtp.login(MAIL_ACCOUNT, MAIL_PASSWORD)
+        smtp.sendmail(from_address, to, msg.as_string())
 
     except Exception as e:
         print(e)
-        print("error")
+        print("email_send_error")
 
 def get_message_formatted(from_address, to, title, description):
     msg = MIMEMultipart('localhost')
@@ -35,7 +48,7 @@ def get_message_formatted(from_address, to, title, description):
 
 def confirm_search_list(search_word):
     try:
-        client = pymongo.MongoClient("localhost", 26543)
+        client = pymongo.MongoClient(MONGODB_IP, MONGODB_PORT)
 
         database_name = "email_list"
         database = client[database_name]
@@ -44,7 +57,7 @@ def confirm_search_list(search_word):
         list = collection.find({"search_word": search_word})
         for i in list:
             print(i['email'])
-            send_via_gmail(i['email'], TITLE, CONTENT+search_word)
+            sending_email_using_gmail(i['email'], TITLE, CONTENT+search_word)
 
         collection.remove({"search_word": search_word})
 
@@ -53,7 +66,7 @@ def confirm_search_list(search_word):
 
 while (True):
     try:
-        client = pymongo.MongoClient("localhost", 26543)
+        client = pymongo.MongoClient(MONGODB_IP, MONGODB_PORT)
 
         database_name = "twitter_api"
         database = client[database_name]
