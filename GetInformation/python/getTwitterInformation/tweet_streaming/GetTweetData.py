@@ -47,8 +47,6 @@ emotion_coll = db.twitter_korean_emotion_data_v1
 # 정규식으로 한글을 포함하고 있는 데이터를 판단
 korean = re.compile('.*[ㄱ-ㅣ가-힣]+.*')
 
-file = open('./polarity.csv', 'r')
-CSVReader = csv.reader(file)
 
 # output data를 받을 listener를 정의. 여기서 받은 데이터를 처리함.
 class StdOutListener(StreamListener):
@@ -65,6 +63,8 @@ class StdOutListener(StreamListener):
                 created_at = d.strftime('%Y%m%d')
                 emotion = 0
 
+                file = open('./polarity.csv', 'r')
+                CSVReader = csv.reader(file)
                 for dict in CSVReader:
                     if dict[0] in text:
                         if "POS" in dict[7]:
