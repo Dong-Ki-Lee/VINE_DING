@@ -13,6 +13,7 @@ change log :
 2018-06-01 : 설명 추가
 2018-06-05 : twitter api key read from file
 2018-06-05 : filtering useless data
+2018-06-16 : filtering useless data ex : LOL
 need to change :
 1. 감정분석 알고리즘의 개선이 필요함
 2. 예외처리시에 다른 처리들이 필요함
