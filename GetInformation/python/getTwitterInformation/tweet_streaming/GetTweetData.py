@@ -45,7 +45,7 @@ db = client.twitter_api
 emotion_coll = db.twitter_korean_emotion_data_v1
 
 # 정규식으로 한글을 포함하고 있는 데이터를 판단
-korean = re.compile('.*[ㄱ-ㅣ가-힣]+.*')
+korean = re.compile('.*[가-힣]+.*')
 
 
 # output data를 받을 listener를 정의. 여기서 받은 데이터를 처리함.
@@ -57,6 +57,7 @@ class StdOutListener(StreamListener):
 
             with_korean = korean.match(text)
             if with_korean:
+                print(text)
                 created_at = tweet["created_at"]
                 id_str = tweet["id_str"]
                 d = datetime.strptime(tweet["created_at"], '%a %b %d %H:%M:%S %z %Y')
