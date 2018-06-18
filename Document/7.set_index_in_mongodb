@@ -1,0 +1,6 @@
+In this project, when measuring the degree of emotion, the calculation is made using an "emotion" value in mongodb collection
+Because of this, if set index this "emotion" value, improve performance when find the emotion value.
+
+index method is as follows.
+
+db.collection.createIndex( { KEY : 1 } )
